@@ -1,1 +1,15 @@
-
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/capture.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/capture",
+      "dest": "api/capture.js"
+    }
+  ]
+}
